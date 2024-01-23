@@ -1,4 +1,4 @@
-</h1>Programacion en Rust - Santiago Higuera De Frutos</h1>
+<h1>Programacion en Rust - Santiago Higuera De Frutos</h1>
 ED. Garceta Grupo Editorial. IBERGARCETA PUBLICACIONES, SL. MADRID, 2022
 www.garceta.es
 
@@ -13,7 +13,7 @@ Rust es un lenguaje de código abierto. Inicialmente se desarrolló al amparo de
 
 En este libro se proporciona una extensa y profunda introducción al lenguaje Rust. En él se abordan y explican detalladamente numerosos temas relacionados con la programación en lenguaje Rust y se utilizan cientos de ejemplos de código que profundizan en numerosos aspectos del lenguaje.
 
-CAPITULOS:
+<h3>CAPITULOS:</h3>
 1 Instalación y primeros pasos
 2 Variables y tipos de datos
 3 Bifurcaciones y bucles
@@ -34,8 +34,7 @@ CAPITULOS:
 18 La librería de crates de Rust
 19 Test y documentación
 
-
-CONTENIDO
+<h3>CONTENIDO</h3>
 
 1 Instalación y primeros pasos
 1.1 Instalación
