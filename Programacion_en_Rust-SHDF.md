@@ -1,217 +1,162 @@
-<h1>Programacion en Rust - Santiago Higuera De Frutos</h1>
-ED. Garceta Grupo Editorial. IBERGARCETA PUBLICACIONES, SL. MADRID, 2022
-www.garceta.es
+# Programacion en Rust - Santiago Higuera De Frutos
 
-<h3>DE LA WEB DE LA EDITORIAL:</h3>
-Desde el año 2015, de acuerdo con la encuesta anual que realiza Stack Overflow entre más de 80.000 programadores de todo el mundo, Rust ha resultado ser el lenguaje de programación más apreciado por los programadores (The most loved language).
+**ED. Garceta Grupo Editorial. IBERGARCETA PUBLICACIONES, SL. MADRID, 2022**
+[www.garceta.es](www.garceta.es)
 
-El lenguaje de programación Rust se creó con el objetivo de obtener un lenguaje de prestaciones similares o superiores a las de C o C++, pero poniendo énfasis en la seguridad del código. Pero Rust no solo ofrece código seguro, Rust ofrece una documentación de alta calidad, que permite la programación concurrente de manera eficiente y segura y programar en WebAssembly, ofrece un alto rendimiento en el procesamiento de datos y, además, dispone de un compilador muy efectivo, así como de un entorno de desarrollo completo, con servicios para documentación de programas, servicios para test unitarios o de integración, servicios para control de versiones y mucho más.
+### DE LA WEB DE LA EDITORIAL:
 
-Desde su primera versión estable de enero de 2014, Rust se utiliza en los desarrollos de grandes empresas, como Amazon, Discord, Dropbox, Facebook (Meta), Google (Alphabet) y Microsoft. Actualmente, Rust se está utilizando para desarrollar el núcleo de sistemas operativos como Linux, Windows y Android.
+Since 2015, according to the annual survey conducted by Stack Overflow among more than 80,000 programmers worldwide, Rust has proven to be the most loved programming language by developers (The most loved language).
 
-Rust es un lenguaje de código abierto. Inicialmente se desarrolló al amparo de la empresa Mozilla, que desarrolla el popular navegador Firefox, entre otros muchos programas. A pesar de que se trata de un lenguaje relativamente nuevo, dispone ya de una amplia librería de utilidades que facilitan la programación dentro de cualquier ámbito. Desde 2021, el desarrollo está coordinado por la Fundación Rust, que es apoyada y financiada por las grandes empresas del software. 
+The Rust programming language was created with the goal of achieving performance similar or superior to that of C or C++, but with a focus on code safety. Rust not only offers secure code but also provides high-quality documentation, enabling efficient and safe concurrent programming and WebAssembly programming. It offers high-performance data processing and features a highly effective compiler, as well as a complete development environment with services for program documentation, unit and integration testing, version control, and more.
 
-En este libro se proporciona una extensa y profunda introducción al lenguaje Rust. En él se abordan y explican detalladamente numerosos temas relacionados con la programación en lenguaje Rust y se utilizan cientos de ejemplos de código que profundizan en numerosos aspectos del lenguaje.
+Since its first stable version in January 2014, Rust has been used in the development of major companies such as Amazon, Discord, Dropbox, Facebook (Meta), Google (Alphabet), and Microsoft. Currently, Rust is being used to develop the core of operating systems like Linux, Windows, and Android.
 
-<h3>CAPITULOS:</h3>
-1 Instalación y primeros pasos
-2 Variables y tipos de datos
-3 Bifurcaciones y bucles
-4 Funciones
-5 Propiedad de los valores
-6 Tipos para secuencias
-7 Estructuras
-8 Enumeraciones
-9 Colecciones
-10 Referencias y vida útil
-11 Genericos y traits
-12 Traits de la librería std
-13 Closures e iteradores
-14 Punteros
-15 Paquetes y módulos
-16 Gestión del entorno. Entrada y salida por pantalla
-17 Ficheros de texto
-18 La librería de crates de Rust
-19 Test y documentación
+Rust is an open-source language initially developed under the auspices of Mozilla, which develops the popular Firefox browser, among many other programs. Despite being a relatively new language, it already has a wide library of utilities that facilitate programming in various fields. Since 2021, the development is coordinated by the Rust Foundation, supported and funded by major software companies.
 
-<h3>CONTENIDO</h3>
+This book provides an extensive and in-depth introduction to the Rust language. It covers numerous topics related to Rust programming in detail and uses hundreds of code examples to delve into various aspects of the language.
 
-1 Instalación y primeros pasos
-1.1 Instalación
-1.2 El editor de texto
-1.3 !Hola, mundo! en Rust
-1.4 !Hola, mundo!, utilizando Cargo
-1.5 Código de los ejemplos
-1.6 Conceptos comunes en programación
-1.7 Comentarios en los programas
+### CHAPTERS:
 
-2 Variables y tipos de datos
-2.1 Declaración de variables
-2.2 Tipos de datos
-2.3 Valores booleanos. Operadores lógicos y relacionales
-2.4 Tipo carácter
-2.5 Tipos para números enteros
-2.6 Valores en coma flotante
-2.7 Operadores aritméticos
-2.8 Exponenciación
-2.9 Métodos matemáticos de los tipos float
-2.10 Constantes
-2.11 Casting entre tipos
-2.12 Alias de los tipos de datos
-2.13 Tamaño y tipo de las variables
+1. Installation and Getting Started
+2. Variables and Data Types
+3. Branches and Loops
+4. Functions
+5. Value Ownership
+6. Types for Sequences
+7. Structures
+8. Enumerations
+9. Collections
+10. References and Lifetimes
+11. Generics and Traits
+12. Standard Library Traits
+13. Closures and Iterators
+14. Pointers
+15. Packages and Modules
+16. Environment Management. Input and Output
+17. Text Files
+18. Rust Crates Library
+19. Testing and Documentation
 
-3 Bifurcaciones y bucles
-3.1 Bifurcaciones if
-3.2 La instrucción match
-3.3 La construcción if ... let
-3.4 Bucles loop
-3.5 Bucles condicionales con while
-3.6 Iterar una colección con bucles for
+### CONTENT
 
-4 Funciones
-4.1 Funciones
-4.2 Parámetros de las funciones
-4.3 Sentencias y expresiones
-4.4 Valores devueltos por las funciones
-4.5 Recursividad
+#### 1. Installation and Getting Started
 
-5 Propiedad de los valores
-5.1 La memoria de pila y la memoria de montón
-5.2 Ámbito de validez de los elementos
-5.3 Propiedad de los valores
-5.4 Semántica Copy versus semántica Move
-5.5 Propiedad de los parámetros de las funciones
+- 1.1 Installation
+- 1.2 Text Editor
+- 1.3 Hello, World! in Rust
+- 1.4 Hello, World! Using Cargo
+- 1.5 Code from the Examples
+- 1.6 Common Programming Concepts
+- 1.7 Comments in Programs
 
-6 Tipos para secuencias
-6.1 Arrays
-6.2 Tuplas
-6.3 Slices y Rangos
-6.4 Conversión de un array en un slice
-6.5 Cadenas de caracteres
-6.6 String slices
-6.7 Cadenas de caracteres como parámetros
-6.8 Convertir cadenas en números: parse()
+#### 2. Variables and Data Types
 
-7 Estructuras
-7.1 Estructuras
-7.2 Constructores
-7.3 Métodos de las estructuras
-7.4 Métodos asociados a una estructura
+- 2.1 Variable Declaration
+- 2.2 Data Types
+- 2.3 Boolean Values. Logical and Relational Operators
+- 2.4 Character Type
+- 2.5 Integer Types
+- 2.6 Floating-Point Values
+- 2.7 Arithmetic Operators
+- 2.8 Exponentiation
+- 2.9 Mathematical Methods for Float Types
+- 2.10 Constants
+- 2.11 Type Casting
+- 2.12 Type Data Type Aliases
+- 2.13 Variable Size and Type
 
-8 Enumeraciones
-8.1 El tipo enum
-8.2 El uso de match con enumeraciones
-8.3 Métodos y datos del tipo enum
-8.4 El enum Option
-8.5 Tipos de errores de ejecución
-8.6 Errores no recuperables con panic!()
-8.7 Gestión de errores con Result
-8.8 El operador ?
+#### 3. Branches and Loops
 
-9 Colecciones
-9.1 Colecciones de la libreria std
-9.2 Vectores
-9.3 HashMap
-9.4 Tipos de datos para claves de un HashMap
-9.5 HashSet
+- 3.1 If Branches
+- 3.2 The match Statement
+- 3.3 The if ... let Construction
+- 3.4 Loop Loops
+- 3.5 Conditional Loops with while
+- 3.6 Iterating Over a Collection with for Loops
 
-10 Referencias y vida útil
-10.1 Concepto de préstamo
-10.2 Vida útil de las referencias
-10.3 Anotación de la vida útil en funciones
-10.4 Anotación de la vida útil en estructuras
-10.5 Anotación de la vida útil en métodos
-10.6 Elision de la anotación de vida útil
-10.7 La vida util static
+#### 4. Functions
 
-11 Genericos y traits
-11.1 Concepto de tipos genéricos
-11.2 Genéricos en funciones
-11.3 Genéricos en estructuras
-11.4 Genericos en enumeraciones
-11.5 Utilización de genéricos en el código
-11.6 Traits
-11.7 Métodos por defecto en un trait
-11.8 Traits en los parámetros de funciones
-11.9 Trait objects
-11.10 Trait bounds en estructuras con genéricos
-11.11 Blanket implementation
-11.12 Herencia en traits
-11.13 Diferencias entre traits e interfaces
-11.14 Genéricos, Vidas útiles y restricciones
-11.15 Tipo de datos asociado a un trait
+- 4.1 Functions
+- 4.2 Function Parameters
+- 4.3 Statements and Expressions
+- 4.4 Values Returned by Functions
+- 4.5 Recursion
 
-12 Traits de la librería std
-12.1 La cláusula #[derive()]
-12.2 El trait Default
-12.3 Traits para copias de valores
-12.4 El trait Drop
-12.5 El trait Add
-12.6 Traits para ordenaciones
-12.7 Traits Into y From
+#### 5. Value Ownership
 
-13 Closures e iteradores
-13.1 Tipos de funciones
-13.2 Closures
-13.3 Funciones de orden superior
-13.4 Lazy operator
-13.5 Iteradores
-13.6 Iteradores a partir de arrays
-13.7 Métodos de los iteradores
+- 5.1 Stack Memory and Heap Memory
+- 5.2 Scope of Elements
+- 5.3 Value Ownership
+- 5.4 Copy Semantics vs. Move Semantics
+- 5.5 Ownership of Function Parameters
 
-14 Punteros
-14.1 Tipos de punteros en Rust
-14.2 Referencias
-14.3 Punteros puros (Raw Pointers)
-14.4 El puntero Box
-14.5 Trait objects
-14.6 Funciones de orden superior
-15 Paquetes y módulos
+#### 6. Types for Sequences
 
-15.1 Módulos
-15.2 Rutas de acceso a los elementos
-15.3 Visibilidad de los elementos del programa
-15.4 Declarar un fichero como modulo
-15.5 Módulos dentro de un mismo fichero
-15.6 Declarar un directorio como modulo
-15.7 Uso de librerías de otro paquete
-15.8 La cláusula use
+- 6.1 Arrays
+- 6.2 Tuples
+- 6.3 Slices and Ranges
+- 6.4 Converting an Array into a Slice
+- 6.5 Strings
+- 6.6 String Slices
+- 6.7 Strings as Parameters
+- 6.8 Converting Strings to Numbers: parse()
 
-16 Gestión del entorno. Entrada y salida por pantalla
-16.1 Leer los argumentos de la llamada al programa
-16.2 Constantes del entorno
-16.3 Manejo de paths
-16.4 Directorio actual
-16.5 Variables del sistema
-16.6 Entrada de datos por teclado
-16.7 Las macros print!()y println!()
-16.8 La macro format!()
-16.9 Otras macros para salidas formateadas
+#### 7. Structures
 
-17 Ficheros de texto
-17.1 Preludio
-17.2 Resultados de entrada-salida
-17.3 El módulo std::fs
-17.4 La estructura File
-17.5 Lectura directa de un fichero a una cadena
-17.6 Leer ficheros línea a línea mediante un bufer
-17.7 Modos de apertura de los ficheros
-17.8 Navegar por el fichero: seek y rewind
+- 7.1 Structures
+- 7.2 Constructors
+- 7.3 Methods of Structures
+- 7.4 Methods Associated with a Structure
 
-18 La librería de crates de Rust
-18.1 Utilización de crates externos
-18.2 Librería ndarray: matrices
-18.3 Librería rand: Números aleatorios
+#### 8. Enumerations
 
-19 Test y documentación
-19.1 Tipos de test
-19.2 Creación de librerías con Cargo
-19.3 Otras macros útiles para test
-19.4 Comprobar llamadas a la macro panic!()
-19.5 Opciones de la orden cargo test
-19.6 Organización del código de los test
-19.7 Test de integración
-19.8 Documentar programas mediante comentarios
-19.9 Test de documentación
-19.10 Macros todo!()y unimplemented!()
+- 8.1 The enum Type
+- 8.2 Using match with Enumerations
+- 8.3 Methods and Data of the enum Type
+- 8.4 The Option enum
+- 8.5 Types of Runtime Errors
+- 8.6 Unrecoverable Errors with panic!()
+- 8.7 Error Handling with Result
+- 8.8 The ? Operator
 
+#### 9. Collections
+
+- 9.1 Collections from the std Library
+- 9.2 Vectors
+- 9.3 HashMap
+- 9.4 Data Types for HashMap Keys
+- 9.5 HashSet
+
+#### 10. References and Lifetimes
+
+- 10.1 Borrowing Concept
+- 10.2 Lifetimes of References
+- 10.3 Lifetimes Annotation in Functions
+- 10.4 Lifetimes Annotation in Structures
+- 10.5 Lifetimes Annotation in Methods
+- 10.6 Elision of Lifetimes Annotation
+- 10.7 The static Lifetime
+
+#### 11. Generics and Traits
+
+- 11.1 Concept of Generic Types
+- 11.2 Generics in Functions
+- 11.3 Generics in Structures
+- 11.4 Generics in Enumerations
+- 11.5 Using Generics in Code
+- 11.6 Traits
+- 11.7 Default Methods in a Trait
+- 11.8 Traits in Function Parameters
+- 11.9 Trait Objects
+- 11.10 Trait Bounds in Structures with Generics
+- 11.11 Blanket Implementation
+- 11.12 Inheritance in Traits
+- 11.13 Differences Between Traits and Interfaces
+- 11.14 Generics, Lifetimes, and Constraints
+- 11.15 Associated Type Data in a Trait
+
+#### 12. Traits from the std Library
+
+- 12.1 The #[derive()] Clause
+- 12.2 The Default Trait
+- 12.3 Traits for Value Copy
