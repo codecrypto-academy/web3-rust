@@ -1,6 +1,6 @@
-#Welcome to Comprehensive Rust 🦀:
+# Welcome to Comprehensive Rust 🦀:
 https://google.github.io/comprehensive-rust/
-###Welcome to Comprehensive Rust 🦀
+### Welcome to Comprehensive Rust 🦀
 1. Running the Course
 2. Using Cargo
 Day 1: Morning
