@@ -1,7 +1,8 @@
 # Rust 101, tutorial de Rust en español
 03/07/2017 - Adrián Arroyo Calle
 https://blog.adrianistan.eu/rust-101-tutorial-rust-espanol/
-## Índice del tutorial de Rust:
+
+### Índice del tutorial de Rust:
 
     Instalando Rust
     Variables y tipos de datos en Rust
@@ -25,7 +26,7 @@ https://blog.adrianistan.eu/rust-101-tutorial-rust-espanol/
     Diversión con punteros: bloques unsafe en Rust
     Bindings entre Rust y C/C++ con bindgen
 
-## Otros artículos sobre Rust en el blog
+### Otros artículos sobre Rust en el blog
 
     Tutorial de Neon
     Tutorial de Maud
