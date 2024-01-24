@@ -1,7 +1,7 @@
 # THE RUST PROGRAMMING LANGUAGE: THE RUST BOOK
 https://doc.rust-lang.org/book/
 A CONTINUACION, ESTÁ COPIADO EL INDICE:
-    Foreword
+    Foreword 
     Introduction
     1. Getting Started
         1.1. Installation
