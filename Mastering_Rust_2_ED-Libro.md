@@ -21,7 +21,7 @@ By Rahul Sharma , Vesa Kaihlavirta
     Building a project with Cargo – imgtool
     Summary 
 
-3º) Tests, Documentation, and Benchmarks
+### 3º) Tests, Documentation, and Benchmarks
     Motivation for testing
     Organizing tests
     Unit tests
@@ -32,7 +32,7 @@ By Rahul Sharma , Vesa Kaihlavirta
     Continuous integration with Travis CI
     Summary 
 
-4º) Types, Generics, and Traits
+### 4º) Types, Generics, and Traits
     Type systems and why they matter
     Generics
     Abstracting behavior with traits
@@ -41,7 +41,7 @@ By Rahul Sharma , Vesa Kaihlavirta
     True polymorphism using trait objects
     Summary 
 
-5º) Memory Management and Safety
+### 5º) Memory Management and Safety
     Programs and memory
     How do programs use memory?
     Memory management and its kinds
@@ -52,7 +52,7 @@ By Rahul Sharma , Vesa Kaihlavirta
     Pointer types in Rust
     Summary 
 
-6º) Error Handling
+### 6º) Error Handling
     Error handling prelude
     Recoverable errors
     Combinators on Option/Result
@@ -61,7 +61,7 @@ By Rahul Sharma , Vesa Kaihlavirta
     Custom errors and the Error trait
     Summary 
 
-7º) Advanced Concepts
+### 7º) Advanced Concepts
     Type system tidbits
     Strings
     Global values
@@ -77,7 +77,7 @@ By Rahul Sharma , Vesa Kaihlavirta
     Serialization and deserialization using serde
     Summary 
 
-8º) Concurrency
+### 8º) Concurrency
     Program execution models
     Concurrency
     Concurrency in Rust
@@ -87,7 +87,7 @@ By Rahul Sharma , Vesa Kaihlavirta
     Other crates
     Summary 
 
-9º) Metaprogramming with Macros
+### 9º) Metaprogramming with Macros
     What is metaprogramming?
     When to use and not use Rust macros
     Macros in Rust and their types
@@ -104,7 +104,7 @@ By Rahul Sharma , Vesa Kaihlavirta
     Useful procedural macro crates
     Summary 
 
-10º) Unsafe Rust and Foreign Function Interfaces
+### 10º) Unsafe Rust and Foreign Function Interfaces
     What is safe and unsafe really?
     Calling C code from Rust
     Calling Rust code from C
@@ -113,7 +113,7 @@ By Rahul Sharma , Vesa Kaihlavirta
     Creating native extensions in Rust for Node.js
     Summary 
 
-11º) Logging
+### 11º) Logging
     What is logging and why do we need it?
     The need for logging frameworks
     Logging frameworks and their key features
@@ -121,20 +121,20 @@ By Rahul Sharma , Vesa Kaihlavirta
     Logging in Rust
     Summary 
 
-12º) Network Programming in Rust
+### 12º) Network Programming in Rust
     Network programming prelude
     Synchronous network I/O
     Asynchronous network I/O
     Summary 
 
-13º) Building Web Applications with Rust
+### 13º) Building Web Applications with Rust
     Web applications in Rust
     Typed HTTP with Hyper
     Actix-web basics
     Building a bookmarks API using Actix-web
     Summary 
 
-14º) Interacting with Databases in Rust
+### 14º) Interacting with Databases in Rust
     Why do we need data persistence?
     SQLite
     PostgreSQL
@@ -142,14 +142,14 @@ By Rahul Sharma , Vesa Kaihlavirta
     Postgres and the diesel ORM
     Summary 
 
-15º) Rust on the Web with WebAssembly
+### 15º) Rust on the Web with WebAssembly
     What is WebAssembly?
     Design goals of WebAssembly
     Getting started with WebAssembly
     Rust and WebAssembly
     Summary 
 
-16º) Building Desktop Applications with Rust
+### 16º) Building Desktop Applications with Rust
     Introduction to GUI development
     GTK+ framework
     Building a hacker news app using gtk-rs
@@ -157,11 +157,11 @@ By Rahul Sharma , Vesa Kaihlavirta
     Other emerging GUI frameworks
     Summary 
 
-17º) Debugging
+### 17º) Debugging
     Introduction to debugging
     RR debugger – a quick overview
     Summary 
 
 
-18º) Other Books You May Enjoy
+### 18º) Other Books You May Enjoy
     Leave a review - let other readers know what you think 
