@@ -13,3 +13,8 @@ https://doc.rust-lang.org/stable/book/appendix-01-keywords.html
 			- (nota: faltan enlaces a mas información en cada una de ellas)
 
   Keywords reservadas para un futuro uso
+
+## PRACTICA: Keywords
+- Tratar de usar una palabra reservada como variable, funcion...
+- Analizar el error que da el compilador
+- En la web (Play Rust), si pones una palabra reservada como una variable, aparece en negrita, por ejemplo as, y si le añades un 1 -> as1 ya se muestra sin negrita. El compilador detecta: as como una Keyword
