@@ -1,6 +1,6 @@
 # Curso_Rust_W3
 
-Introducción a Rust
+## Introducción a Rust
 
 1º) EMPEZANDO CON RUST: → JUAN ANTONIO - 1h
 
