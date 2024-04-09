@@ -1,15 +1,15 @@
 # Curso_Rust_W3
 ## 3º) CONCEPTOS DE PROGRAMACION:
 ### Conceptos comunes de programación
-	- Comparando Rust con otros lenguajes
+- Comparando Rust con otros lenguajes
  
-	- Keywords (Palabras Clave)
+- Keywords (Palabras Clave)
 
-  - Variables y mutabilidad		
+- Variables y mutabilidad		
 	
-  - Constantes
+- Constantes
     
-	- Shadowing
+- Shadowing
 	
  ### Tipos de Datos: Escalares, un valor simple
 		- Enteros
