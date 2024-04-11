@@ -1,0 +1,13 @@
+## INSTALAR RUST:
+### Introducción
+### LINUX
+Ver: Instalar_Linux
+### MAC OS
+Ver: Instalar_Linux
+### WINDOWS
+Ver: Instalar_Linux
+### RESOLUCION DE PROBLEMAS (TROUBLESHOOTING)
+
+### ACTUALIZACIONES Y DESINSTALACION
+
+### DOCUMENTACION LOCAL
