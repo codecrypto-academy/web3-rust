@@ -11,6 +11,6 @@ Una vez descargado, damos doble click en el instalador y seguimos las instruccio
 
 Recomiendo instalar algunas extensiones dentro de VS Code para mejorar la experiencia de programación. Entre ellos están:
 
-- `rust-analyzer`: compilador en tiempo real, ayuda a completar el código, sugiere importar módulos, infiere tipos, entre otras cosas.
+- `rust-analyzer`: compilador en tiempo real, ayuda a completar el código, sugiere importar módulos, infiere tipos, enlace a definiciones, formatea el código, encuentra referencias, entre otras cosas.
 - `crates`: ayuda a gestionar dependencias.
 - `Even Better TOML`: ayuda a visualizar archivos con extensión `.TOML`.

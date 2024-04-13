@@ -35,7 +35,9 @@ Para comprobar que Rust se ha instalado correctamente, podemos utilizar los sigu
 
 - Versión del toolchain manager: `rustup --version`.
 - Versión del compilador: `rustc --version`.
-- Versión de cargo `cargo version`
+- Versión de cargo `cargo version`.
+
+`rustc` es el compilador de Rust y puede utilizarse para compilar el código en Rust directamente. Como en otros lenguajes de programación, Rust tiene su propio packet manager, `cargo`, que se encarga de instalar paquetes y mantener dependencias, similar a `npm` para Node o `pip` para Python.
 
 Si esos tres comandos nos responden correctamente en la terminal, quiere decir que ya podemos usar Rust en nuestro equipo.
 
@@ -51,3 +53,7 @@ rustup self uninstall
 ## Instalación en Windows
 
 Se recomienda tener instalado un subsistema para Linux como [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install) para que todos usemos los mismos comandos independientemente del sistema operativo.
+
+## Usar Rust sin instalación
+
+Existe un compilador web que se puede usar para escribir programas cortos o hacer pruebas cuando no se tiene un entorno de desarrollo instalado con Rust. En la página oficial de Rust pueden encontrar un [enlace](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021).
