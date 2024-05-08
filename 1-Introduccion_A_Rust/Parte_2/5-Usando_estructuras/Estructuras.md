@@ -19,6 +19,8 @@
 - Múltiples Bloques impl
 ```
 
+### Definición e instanciación de estructuras.
+
 Las estructuras nos permiten agrupar datos que están relacionados. Para definir una estructura usamos la palabra clave `struct` seguido del nombre usando la convecnción `PascalCase`. Luego usamos llaves `{}` para definir el bloque que va a contener la estructura.
 
 El primer campo de la estructura es el nombre del atributo y se escribe usando la convención `snake_case`, seguido del tipo de dato en `PascalCase`.
@@ -41,18 +43,8 @@ let bitcoin = Token {
     total_supply: 21_000_000,
 };
 ```
+### Creando Instancias desde Otras Instancias con la sintaxis struct Update
 
-Para acceder a los campos de una estructura podemos usar `dot notation` después del nombre de la estructura.
-
-```
-let total_supply = bitcoin.total_supply;
-```
-
-También podemos usar la misma notación para mutar un campo de la estructura. Acuérdate que en Rust todas las variables son inmutables por defecto, así que debemos usar la palabra clave `mut` en su definición para poder mutarla.
-
-```
-bitcoin.total_supply = 42_000_000;
-```
 Para crear otra instancia de la misma estructura podemos definir únicamente los valores que deseamos cambiar y usar los demás valores previamente definidios en otra variable. Para ello usamos la palabra clave `..` seguido del nombre de la variable de la cual queremos copiar sus valores.
 
 ```
@@ -103,6 +95,19 @@ BTC: Token { name: "Bitcoin", symbol: "BTC", decimals: 8, total_supply: 21000000
 
 BCH: Token { name: "Bitcoin Cash", symbol: "BTC", decimals: 8, total_supply: 420000000000 }
 ```
+
+Para acceder a los campos de una estructura podemos usar `dot notation` después del nombre de la estructura.
+
+```
+let total_supply = bitcoin.total_supply;
+```
+
+También podemos usar la misma notación para mutar un campo de la estructura. Acuérdate que en Rust todas las variables son inmutables por defecto, así que debemos usar la palabra clave `mut` en su definición para poder mutarla.
+
+```
+bitcoin.total_supply = 42_000_000;
+```
+
 
 Para añadir funcionalidad a una estructura podemos definir bloques de implementación usando la palabra clave `impl` seguida del nombre de la estructura. Dentro del bloque de implementación podemos definir varias funciones que van a estar asociadas a ese tipo únicamente.
 
