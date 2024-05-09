@@ -1,0 +1,1 @@
+/Users/nseguias/dev/codecrypto/1-Introduccion_A_Rust/Parte_2/12-Proyecto_entrada_y_salida/proyecto/target/debug/proyecto: /Users/nseguias/dev/codecrypto/1-Introduccion_A_Rust/Parte_2/12-Proyecto_entrada_y_salida/proyecto/src/main.rs
