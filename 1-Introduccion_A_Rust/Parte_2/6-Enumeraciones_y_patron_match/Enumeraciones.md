@@ -99,7 +99,7 @@ fn main() {
 
 ### Option Enum y sus ventajas sobre los valores Nulos
 
-En algunos lenguajes de programación se puede usar el valor `null` para definir la ausencia de un valor, pero Rust no lo define. Sin embargo, en Rust existe el `Option enum` y está definido en la librería estandar.
+En algunos lenguajes de programación se puede usar el valor `null` para definir la ausencia de un valor, pero Rust no lo define. Sin embargo, en Rust existe el `Option enum` y está definido en la librería estandar por lo que no hace falta importar ninguna librería para usarlas.
 
 ```
 pub enum Option<T> {
@@ -108,4 +108,115 @@ pub enum Option<T> {
     /// Some value of type `T`.
     Some(T),
 }
+```
+
+`Some(T)` encapsula un valor genérico de tipo `T` y `None` representa la ausencia de un valor.
+
+Cuando definimos el tipo de dato que puede tomar una variable, si quisiéramos que fuese opcional, tendríamos que definirlo usando la palabra clave `Option` seguido de los signos menor que `<` y mayor que `>`, encapsulando el tipo de la variable dentro de ambos.
+
+```
+struct Usuario {
+    nombre: String,
+    primer_apellido: String,
+    segundo_apellido: Option<String>,
+}
+
+let usuario = Usuario {
+    nombre: "Pedro".to_string(),
+    primer_apellido: "Jimenez".to_string(),
+    segundo_apellido: Some("Rivas".to_string()),
+};
+
+let usuario = Usuario {
+    nombre: "John".to_string(),
+    primer_apellido: "Smith".to_string(),
+    segundo_apellido: None,
+};
+```
+
+Es bastante común que un función retorne un valor opcional, dependiendo de los parámetros de entrada. En el ejemplo siguiente, si el usuario no existiese, la función en vez de retornar el valor 0, retornaría `None` para que pueda ser correctamente gestionado, diciendo que el usuario no existe por ejemplo.
+
+```
+#[derive(Debug)]
+struct Usuario {
+    iban: String,
+    saldo: f32,
+}
+
+fn get_balance(banco: &Vec<Usuario>, iban: &String) -> Option<f32> {
+    for usuario in banco {
+        if usuario.iban == *iban {
+            return Some(usuario.saldo)
+        }
+    }
+    None
+}
+
+fn main() {
+    let banco = vec![
+        Usuario { 
+            iban: "ES1234".to_string(),
+            saldo: 1024.12,
+        },
+        Usuario { 
+            iban: "ES5678".to_string(),
+            saldo: 420.69,
+        },     
+    ];
+    
+    let balance = get_balance(&banco, &"ES1234".to_string());
+    println!("La cuenta ES1234 tiene {} euros", balance.unwrap())
+    
+}
+
+
+----- Standard Output -----
+
+La cuenta ES1234 tiene 1024.12 euros
+```
+
+### Matching con Option<T>
+
+Podemos usar el patrón `match` para decidir que hacer con un resultado que es opcional. Por ejemplo, si tenemos algún resultado hacer algo, y si no hay resultado hacer otra cosa. Usando el ejemplo anterior podríamos hacer lo siguiente para hacer el código más robusto en el caso de que la cuenta no exista.
+
+```
+#[derive(Debug)]
+struct Usuario {
+    iban: String,
+    saldo: f32,
+}
+
+fn get_balance(banco: &Vec<Usuario>, iban: &String) -> Option<f32> {
+    for usuario in banco {
+        if usuario.iban == *iban {
+            return Some(usuario.saldo)
+        }
+    }
+    None
+}
+
+fn main() {
+    let banco = vec![
+        Usuario { 
+            iban: "ES1234".to_string(),
+            saldo: 1024.12,
+        },
+        Usuario { 
+            iban: "ES5678".to_string(),
+            saldo: 420.69,
+        },     
+    ];
+    
+    let iban = String::from("GB1337");
+    let balance = get_balance(&banco, &iban.to_string());
+    
+    match balance {
+        Some(balance) => println!("La cuenta {iban} tiene {balance} euros"),
+        None => println!("La cuenta {iban} no existe")
+    }
+}
+
+----- Standard Output -----
+
+La cuenta GB1337 no existe
 ```

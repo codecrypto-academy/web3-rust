@@ -25,6 +25,8 @@ Mi nombre es Nahem.
 
 Después de los paréntesis `()`, se puede indicar con una flecha `->` el tipo de dato que retorna la función, si hubiese, o se puede dejar en blanco si no retorna nada. Entre llaves `{}` se encuentra el bloque de código que va a ejecutarse cuando se llama la función.
 
+La función `main()` es la única excepción que no retorna ningún tipo.
+
 En una función, la ultima línea se utiliza para retornar un valor siempre y cuando no se coloque un punto y coma `;` al final de la línea. A esto se le conoce como una expresión. Las declaraciones suelen llevar un punto y coma `;` al final y no retornan ningún valor.
 
 Si quisiéramos retornar algún valor en algún lugar que no sea la última línea, se utiliza la palabra `return` seguida de la expresión que deseamos retornar. En este caso sí tenemos que terminar la línea con un punto y coma `;`.
