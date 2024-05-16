@@ -4,85 +4,85 @@
 - Muchas de esas Keywords tienen significados especiales y vas a usarlas para hacer varias tareas en tus programas de Rust. Algunas de ellas no tienen actualmente ninguna funcionalidad asociada, pero también han sido reservadas por una funcionalidad que puede ser añadida a Rust en el futuro.
 
 ### Listado de Keywords:
-as - perform primitive casting, disambiguate the specific trait containing an item, or rename items in use statements
+`as` - perform primitive casting, disambiguate the specific trait containing an item, or rename items in use statements
 
-async - return a Future instead of blocking the current thread
+`async` - return a Future instead of blocking the current thread
 
-await - suspend execution until the result of a Future is ready
+`await` - suspend execution until the result of a Future is ready
 
-break - exit a loop immediately
+`break` - exit a loop immediately
 
-const - define constant items or constant raw pointers
+`const` - define constant items or constant raw pointers
 
-continue - continue to the next loop iteration
+`continue` - continue to the next loop iteration
 
-crate - in a module path, refers to the crate root
+`crate` - in a module path, refers to the crate root
 
-dyn - dynamic dispatch to a trait object
+`dyn` - dynamic dispatch to a trait object
 
-else - fallback for if and if let control flow constructs
+`else` - fallback for if and if let control flow constructs
 
-enum - define an enumeration
+`enum` - define an enumeration
 
-extern - link an external function or variable
+`extern` - link an external function or variable
 
-false - Boolean false literal
+`false` - Boolean false literal
 
-fn - define a function or the function pointer type
+`fn` - define a function or the function pointer type
 
-for - loop over items from an iterator, implement a trait, or specify a higher-ranked lifetime
+`for` - loop over items from an iterator, implement a trait, or specify a higher-ranked lifetime
 
-if - branch based on the result of a conditional expression
+`if` - branch based on the result of a conditional expression
 
-impl - implement inherent or trait functionality
+`impl` - implement inherent or trait functionality
 
-in - part of for loop syntax
+`in` - part of for loop syntax
 
-let - bind a variable
+`let` - bind a variable
 
-loop - loop unconditionally
+`loop` - loop unconditionally
 
-match - match a value to patterns
+`match` - match a value to patterns
 
-mod - define a module
+`mod` - define a module
 
-move - make a closure take ownership of all its captures
+`move` - make a closure take ownership of all its captures
 
-mut - denote mutability in references, raw pointers, or pattern bindings
+`mut` - denote mutability in references, raw pointers, or pattern bindings
 
-pub - denote public visibility in struct fields, impl blocks, or modules
+`pub` - denote public visibility in struct fields, impl blocks, or modules
 
-ref - bind by reference
+`ref` - bind by reference
 
-return - return from function
+`return` - return from function
 
-Self - a type alias for the type we are defining or implementing
+`Self` - a type alias for the type we are defining or implementing
 
-self - method subject or current module
+`self` - method subject or current module
 
-static - global variable or lifetime lasting the entire program execution
+`static` - global variable or lifetime lasting the entire program execution
 
-struct - define a structure
+`struct` - define a structure
 
-super - parent module of the current module
+`super` - parent module of the current module
 
-trait - define a trait
+`trait` - define a trait
 
-true - Boolean true literal
+`true` - Boolean true literal
 
-type - define a type alias or associated type
+`type` - define a type alias or associated type
 
-union - define a union; is only a keyword when used in a union declaration
+`union` - define a union; is only a keyword when used in a union declaration
 
-unsafe - denote unsafe code, functions, traits, or implementations
+`unsafe` - denote unsafe code, functions, traits, or implementations
 
-use - bring symbols into scope
+`use` - bring symbols into scope
 
-where - denote clauses that constrain a type
+`where` - denote clauses that constrain a type
 
-while - loop conditionally based on the result of an expression
+`while` - loop conditionally based on the result of an expression
 
-- Puedes encontrar una lista de las Keywords aquí:  Apéndice A
+- Puedes encontrar una lista de las Keywords aquí:  `Apéndice A`
 
 https://doc.rust-lang.org/stable/book/appendix-01-keywords.html
 
@@ -94,31 +94,31 @@ https://doc.rust-lang.org/stable/book/appendix-01-keywords.html
   Keywords reservadas para un futuro uso
 
 ### Listado de Keywords Reservadas:
-abstract
+`abstract`
 
-become
+`become`
 
-box
+`box`
 
-do
+`do`
 
-final
+`final`
 
-macro
+`macro`
 
-override
+`override`
 
-priv
+`priv`
 
-try
+`try`
 
-typeof
+`typeof`
 
-unsized
+`unsized`
 
-virtual
+`virtual`
 
-yield
+`yield`
 
 ## PRACTICA: Keywords
 - Tratar de usar una palabra reservada como variable, funcion...
