@@ -220,3 +220,20 @@ fn main() {
 
 La cuenta GB1337 no existe
 ```
+
+### Flujo de Control conciso, usando: if let
+
+Si sólamente estamos interesados en el caso de que exista algún valor, descartando todos los demás posibles resultados, podemos usar la sintaxis plana.
+
+Para ello, usamos la palabra clave `if let` seguida de `Some` y en paréntesis `()` el nombre de la variable que queremos consumir y la igualamos `=` a la variable que contiene el valor opcional.
+
+```
+if let Some(saldo) = balance {
+    println!("La cuenta {iban} tiene {saldo} euros")
+}
+```
+
+Se lee así, si hay algún valor dentro de la variable `balance`, lo llamaremos `saldo` e imprimiremos por pantalla ese valor. En caso de que `balance` sea `None` no haremos nada.
+
+Dentro del bloque de código podemos imrpimir, asignar ese valor a otra variable, etc.
+
