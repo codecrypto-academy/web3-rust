@@ -155,3 +155,18 @@ error: could not compile `playground` (bin "playground") due to 2 previous error
 ```
 
 En la web (Play Rust), si pones una palabra reservada como una variable, aparece en negrita, por ejemplo as, y si le añades un 1 -> as1 ya se muestra sin negrita. El compilador detecta: as como una Keyword.
+```
+fn main() {
+    let as1: i128 = 12;// Si cambiamos el nombre de variable, de as a as1, el programa se ejecutará correctamente
+    println!("{}", as1);
+}
+```
+Y aquí vemos la salida del compilador:
+```
+Standard Error
+   Compiling playground v0.0.1 (/playground)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.42s
+     Running `target/debug/playground`
+Standard Output
+12
+```
