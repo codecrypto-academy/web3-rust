@@ -1,7 +1,7 @@
 ## Keywords (Palabras Clave): Palabras reservadas del lenguaje Rust
-		NOTA: Resolver cómo se van a mostrar, si una matriz con varias columnas, o en la propia pantalla del Apéndice A.
-- El lenguaje Rust posee un conjunto de palabras clave, las Keywords, que están reservadas para ser usadas exclusivamente por el lenguaje, al igual que ocurre con muchos otros lenguajes de programación. Ten en cuenta que no puedes usar esas palabras como nombres de variables o de funciones.
-- Muchas de esas Keywords tienen significados especiales y vas a usarlas para hacer varias tareas en tus programas de Rust. Algunas de ellas no tienen actualmente ninguna funcionalidad asociada, pero también han sido reservadas por una funcionalidad que puede ser añadida a Rust en el futuro.
+
+El lenguaje Rust posee un conjunto de palabras clave, las Keywords, que están reservadas para ser usadas exclusivamente por el lenguaje, al igual que ocurre con muchos otros lenguajes de programación. Ten en cuenta que no puedes usar esas palabras como nombres de variables o de funciones.
+Muchas de esas Keywords tienen significados especiales y vas a usarlas para hacer varias tareas en tus programas de Rust. Algunas de ellas no tienen actualmente ninguna funcionalidad asociada, pero también han sido reservadas por una funcionalidad que puede ser añadida a Rust en el futuro.
 
 ### Listado de Keywords:
 `as` - perform primitive casting, disambiguate the specific trait containing an item, or rename items in use statements
@@ -82,16 +82,16 @@
 
 `while` - loop conditionally based on the result of an expression
 
-- Puedes encontrar una lista de las Keywords aquí:  `Apéndice A`
+Puedes encontrar una lista de las Keywords aquí:  `Apéndice A`
 
 https://doc.rust-lang.org/stable/book/appendix-01-keywords.html
 
-- Existen dos tipos de Keywords actualmente:
+Existen dos tipos de Keywords actualmente:
 
-  Keywords actualmente en uso, a continuación de cada una encontrarás la descripción de su funcionalidad
+- Keywords actualmente en uso, a continuación de cada una encontrarás la descripción de su funcionalidad
 			- (nota: faltan enlaces a mas información en cada una de ellas)
 
-  Keywords reservadas para un futuro uso
+- Keywords reservadas para un futuro uso
 
 ### Listado de Keywords Reservadas:
 `abstract`
@@ -121,6 +121,37 @@ https://doc.rust-lang.org/stable/book/appendix-01-keywords.html
 `yield`
 
 ## PRACTICA: Keywords
-- Tratar de usar una palabra reservada como variable, funcion...
-- Analizar el error que da el compilador
-- En la web (Play Rust), si pones una palabra reservada como una variable, aparece en negrita, por ejemplo as, y si le añades un 1 -> as1 ya se muestra sin negrita. El compilador detecta: as como una Keyword
+En esta práctica vamos a tratar de usar una palabra reservada como nombre de una variable, una funcion, etc.
+
+```
+fn main() {
+    let as: i128 = 12;//ERROR: Trata de usar una Keyword "as" como nombre de variable
+    println!("{}", as);
+}
+```
+Analizamos el error que da el compilador:
+```
+Exited with status 101
+Standard Error
+   Compiling playground v0.0.1 (/playground)
+error: expected identifier, found keyword `as`
+ --> src/main.rs:2:9
+  |
+2 |     let as: i128 = 12;//ERROR: Trata de usar una Keyword como nombre de variable
+  |         ^^ expected identifier, found keyword
+  |
+help: escape `as` to use it as an identifier
+  |
+2 |     let r#as: i128 = 12;//ERROR: Trata de usar una Keyword como nombre de variable
+  |         ++
+
+error: expected expression, found keyword `as`
+ --> src/main.rs:3:20
+  |
+3 |     println!("{}", as);
+  |                    ^^ expected expression
+
+error: could not compile `playground` (bin "playground") due to 2 previous errors
+```
+
+En la web (Play Rust), si pones una palabra reservada como una variable, aparece en negrita, por ejemplo as, y si le añades un 1 -> as1 ya se muestra sin negrita. El compilador detecta: as como una Keyword.
