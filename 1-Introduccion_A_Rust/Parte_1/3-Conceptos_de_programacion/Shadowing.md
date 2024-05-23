@@ -1,14 +1,15 @@
 ## Shadowing
 En Rust, podemos declarar una nueva variable con el mismo nombre que una variable que hemos usado previamente.
 Los Rustaceans dicen que la primera variable está eclipsada/ a la sombra (shadowed) por la segunda, lo que significa que esa segunda variable es lo que el compilador va a ver cuando uses la variable con ese nombre.
-Efectivamente, la segunda variable eclipsa a la primera tomando cualquier uso del nombre de variable para sí mismo, hasta que esa vriable es eclipsada de nuevo, o se termina el scope.
+Efectivamente, la segunda variable eclipsa a la primera tomando cualquier uso del nombre de variable para sí mismo, hasta que esa variable es eclipsada de nuevo, o se termina su ámbito (scope).
 
-Podemos eclipsar una variable usando el mismo nombre de variable y repitiendo el uso de la keyword 'let', lo veremos en el siguiente ejemplo:
+Podemos eclipsar una variable usando el mismo nombre de variable y repitiendo el uso de la keyword `let`, lo veremos en el siguiente ejemplo:
 
  ----------------------------------------------------------------
-
 ### EJEMPLO: Asignacion inicial de valor a una variable y nueva asignación en un párrafo interior. Al salir del bucle, el valor vuelve a ser el que tenía antes de entrar en el bucle.
 - EXPLICACION: ¡¡¡PENDIENTE DE REDACTARLO!!!
+El siguiente programa, lo primero vincula ´x´ al valor 5. Después crea una nueva variable ´x´ repitiendo ´let x =´ y tomando el valor original y sumándole 1, con lo cual, el valor de ´x´ pasa a ser 6.
+Entonces, dentro del ámbito interior creado con las llaves {}, el tercer estamento ´let´ eclipsa también a ´x´ y crea una nueva variable, multiplicando el valor previo por 2 y dándole a ´x´ un valor de 12. Cuando se termina su ámbito, la ocultación interna finaliza y ´x´ vuelve a tener un valor de 6. 
 ```
 fn main() {
     let x = 5;
@@ -23,6 +24,7 @@ fn main() {
     println!("The value of x is: {x}");
 }
 ```
+Cuando ejecutamos el programa, obtendremos el siguiente resultado:
 ```
 $ cargo run
    Compiling variables v0.1.0 (file:///projects/variables)
@@ -34,9 +36,9 @@ The value of x is: 6
 
 - Comparacion con mut: REDACTAR!!!
   
-- Shadowing es diferente de marcar la variable con mut porque conseguiremos un error de compilación si accidentalmente tratamos de reasignar un valor a esta variable sin usar let.
-- Al usar let podemos ejecutar algunas transformaciones sobre un valor, pero seguimos teniendo la variable como inmutable una vez que esas transformaciones han concluido.
-- La otra diferencia entre mut y shadowing es que, efectivamente estamos creando una nueva variable cada vez que usamos let de nuevo, podemos cambiar el tipo del valor, pero podemos seguir usando el mismo nombre.
+Shadowing es diferente de marcar la variable con mut porque conseguiremos un error de compilación si accidentalmente tratamos de reasignar un valor a esta variable sin usar let.
+Al usar let podemos ejecutar algunas transformaciones sobre un valor, pero seguimos teniendo la variable como inmutable una vez que esas transformaciones han concluido.
+La otra diferencia entre mut y shadowing es que, efectivamente estamos creando una nueva variable cada vez que usamos let de nuevo, podemos cambiar el tipo del valor, pero podemos seguir usando el mismo nombre.
 
  ----------------------------------------------------------------
 ### EJEMPLO: Al hacer Shadowing, se crea una nueva variable.
