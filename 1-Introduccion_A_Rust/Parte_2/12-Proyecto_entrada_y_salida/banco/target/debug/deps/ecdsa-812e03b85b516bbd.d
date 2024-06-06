@@ -1,0 +1,10 @@
+/Users/nseguias/dev/codecrypto/1-Introduccion_A_Rust/Parte_2/12-Proyecto_entrada_y_salida/banco/target/debug/deps/libecdsa-812e03b85b516bbd.rmeta: /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/lib.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/asn1.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/hazmat.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/rfc6979.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/sign.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/verify.rs
+
+/Users/nseguias/dev/codecrypto/1-Introduccion_A_Rust/Parte_2/12-Proyecto_entrada_y_salida/banco/target/debug/deps/ecdsa-812e03b85b516bbd.d: /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/lib.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/asn1.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/hazmat.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/rfc6979.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/sign.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/verify.rs
+
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/lib.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/asn1.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/hazmat.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/rfc6979.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/sign.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ecdsa-0.10.2/src/verify.rs:

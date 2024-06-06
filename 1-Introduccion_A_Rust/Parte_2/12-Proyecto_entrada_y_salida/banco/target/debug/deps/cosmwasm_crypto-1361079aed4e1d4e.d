@@ -1,0 +1,9 @@
+/Users/nseguias/dev/codecrypto/1-Introduccion_A_Rust/Parte_2/12-Proyecto_entrada_y_salida/banco/target/debug/deps/libcosmwasm_crypto-1361079aed4e1d4e.rmeta: /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/lib.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/ed25519.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/errors.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/identity_digest.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/secp256k1.rs
+
+/Users/nseguias/dev/codecrypto/1-Introduccion_A_Rust/Parte_2/12-Proyecto_entrada_y_salida/banco/target/debug/deps/cosmwasm_crypto-1361079aed4e1d4e.d: /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/lib.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/ed25519.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/errors.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/identity_digest.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/secp256k1.rs
+
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/lib.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/ed25519.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/errors.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/identity_digest.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/cosmwasm-crypto-0.14.1/src/secp256k1.rs:

@@ -1,0 +1,10 @@
+/Users/nseguias/dev/codecrypto/1-Introduccion_A_Rust/Parte_2/12-Proyecto_entrada_y_salida/banco/target/debug/deps/libsha2-d33d4eb2674752ec.rmeta: /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/lib.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/consts.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256/soft.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512/soft.rs
+
+/Users/nseguias/dev/codecrypto/1-Introduccion_A_Rust/Parte_2/12-Proyecto_entrada_y_salida/banco/target/debug/deps/sha2-d33d4eb2674752ec.d: /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/lib.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/consts.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256/soft.rs /Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512/soft.rs
+
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/lib.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/consts.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha256/soft.rs:
+/Users/nseguias/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha2-0.9.9/src/sha512/soft.rs:

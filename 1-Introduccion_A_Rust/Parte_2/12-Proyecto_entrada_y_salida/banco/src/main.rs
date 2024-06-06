@@ -358,6 +358,8 @@ mod tests {
             assert_eq!(cuenta2.saldo, 50.0 - 10.0 + 100.0);
             cuenta2.retirar(cuenta2.saldo, &"1111".to_string()).unwrap();
             assert_eq!(cuenta2.saldo, 0.0);
+
+            print!("40");
         }
     }
 }
