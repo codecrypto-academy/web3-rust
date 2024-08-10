@@ -1,3 +1,77 @@
+# Que conseguiremos
+- Instalacion y proyectos
+    - Aprender la sintaxis de Rust
+    - Crear proyectos usando cargo: librerias, binarios, workspaces
+    - Usar docker con Visual Studio Code para desarrollo
+    - Crer imagenes docker para desplegar en docker y en kubernetes
+- Rust basico
+    - Conocimiento de la sintaxis y de los elementos basicos del lenguaje
+    - Uso de struc, implemtacion de traits
+    - Caracteristicas especiales del lenguaje como Ownership
+    - Gestion de errores y nulos
+
+# Conocimientos previos
+Las personas que hagan este modulo tiene conocimientos de 
+
+- javascript / typescript
+- nodejs / react
+- docker / kubernetes
+- sql
+- html / css / bootstrap
+
+Es deseable que los ejemplos fueran practicos orientado a:
+
+- Algoritmos criptograficos
+- Conexiones con base de datos
+- Despliegues en Docker y Kubernetes
+- Realizacion de servidores web
+- Uso de librerias de serializacion deserializacion
+- Uso de librerias cliente de blockchain
+
+# Contenido BORRADOR
+
+## Proyecto Rust
+- Proyecto con cargo
+- Uso de container vscode
+- Build de imagenes de aplicaciones Rust
+- EJERCICIOS: CREACION DE PROYECTOS EN RUST.
+## Basico
+### Tipos y Operaciones
+- Data Types
+- Operaciones
+- Bignumber
+- Operaciones relacionales, logicas, bitwise
+- OverFlow
+- Funciones
+- TEST: USANDO UNA LIBRERIA CRIPTO, CREAR WALLET EN FICHEROS Y REALIZAR OPERACIONES
+### Ownership, Control Flow
+- Ownership
+- Control Flow
+- Option y Result. Errores y Nulos (NO ESTA HECHO)
+- Enum y pattern matching (NO ESTA HECHO)
+- EJERCICIO: ENCUENTRA UN NUMERO
+### Estructuras de datos
+- Array, Tuplas y Vectores
+- Struct y Vect
+- Implementacion de struct
+- Genericos
+- Modulos
+- Colleciones
+- EJERCICIO: ACCESO A BASE DE DATOS Y GENERACION DE CSV.
+### Servidores WEB
+- Uso de rocket
+- Acceso a un api de terceros
+- Creacion de una API para consumirla por front end REACT
+- EJERCICIO: API PARA ACCEDER A UN NODO DE ETHEREUM
+### Testing
+- Test unitarios
+- Test de integracion
+
+
+
+
+
+
 # Curso_Rust_W3
 
 ## Introducción a Rust - Temario completo
