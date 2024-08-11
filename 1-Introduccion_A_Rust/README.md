@@ -1,4 +1,5 @@
 # Que conseguiremos
+
 - Instalacion y proyectos
     - Aprender la sintaxis de Rust
     - Crear proyectos usando cargo: librerias, binarios, workspaces
@@ -9,6 +10,7 @@
     - Uso de struc, implemtacion de traits
     - Caracteristicas especiales del lenguaje como Ownership
     - Gestion de errores y nulos
+- Rust avanzado
 
 # Conocimientos previos
 Las personas que hagan este modulo tiene conocimientos de 
@@ -47,8 +49,8 @@ Es deseable que los ejemplos fueran practicos orientado a:
 ### Ownership, Control Flow
 - Ownership
 - Control Flow
-- Option y Result. Errores y Nulos (NO ESTA HECHO)
 - Enum y pattern matching (NO ESTA HECHO)
+- Option y Result. Errores y Nulos (NO ESTA HECHO)
 - EJERCICIO: ENCUENTRA UN NUMERO
 ### Estructuras de datos
 - Array, Tuplas y Vectores
