@@ -5,12 +5,14 @@
     - Crear proyectos usando cargo: librerias, binarios, workspaces
     - Usar docker con Visual Studio Code para desarrollo
     - Crer imagenes docker para desplegar en docker y en kubernetes
+
 - Rust basico
     - Conocimiento de la sintaxis y de los elementos basicos del lenguaje
     - Uso de struc, implemtacion de traits
     - Caracteristicas especiales del lenguaje como Ownership
     - Gestion de errores y nulos
 - Rust avanzado
+
 
 # Conocimientos previos
 Las personas que hagan este modulo tiene conocimientos de 
@@ -21,41 +23,35 @@ Las personas que hagan este modulo tiene conocimientos de
 - sql
 - html / css / bootstrap
 
-Es deseable que los ejemplos fueran practicos orientado a:
-
-- Algoritmos criptograficos
-- Conexiones con base de datos
-- Despliegues en Docker y Kubernetes
-- Realizacion de servidores web
-- Uso de librerias de serializacion deserializacion
-- Uso de librerias cliente de blockchain
-
 # Contenido BORRADOR
 
 ## Proyecto Rust
+- Empezando
+- Instalar Rust
+- Instalar Visual Studio Code
+- Para quien es rust
 - Proyecto con cargo
-- Uso de container vscode
-- Build de imagenes de aplicaciones Rust
+- Proyectos
 - EJERCICIOS: CREACION DE PROYECTOS EN RUST.
 ## Basico
 ### Tipos y Operaciones
 - Data Types
 - Operaciones
 - Bignumber
-- Operaciones relacionales, logicas, bitwise
+- Operaciones relacionales, logicas
+- Bitwise
 - OverFlow
-- Funciones
-- TEST: USANDO UNA LIBRERIA CRIPTO, CREAR WALLET EN FICHEROS Y REALIZAR OPERACIONES
-### Ownership, Control Flow
+- Control de flujo
+- Array Enums Vec Tuplas
+- Funciones y closures 
+- Miniproyecto: USANDO UNA LIBRERIA CRIPTO
+- Option y Result
 - Ownership
-- Control Flow
-- Enum y pattern matching (NO ESTA HECHO)
-- Option y Result. Errores y Nulos (NO ESTA HECHO)
+- String
+- Date Time
 - EJERCICIO: ENCUENTRA UN NUMERO
 ### Estructuras de datos
-- Array, Tuplas y Vectores
-- Struct y Vect
-- Implementacion de struct
+- Struct y Vec de Struct
 - Genericos
 - Modulos
 - Colleciones

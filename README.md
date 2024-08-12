@@ -14,7 +14,6 @@
 
 - Tests unitarios y de integración
 - Benchmark testing
-- Fuzzing
 - Property-based testing con proptest
 - Mocking en Rust
 
