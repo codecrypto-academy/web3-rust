@@ -1,7 +1,7 @@
 # Guía Completa de Conceptos en Rust
 
 ## Tabla de Contenidos
-1. [Tipos de Datos Básicos](#tipos-de-datos-básicos)
+1. [Tipos de Datos Escalares](#tipos-de-datos-básicos)
 2. [Char y String](#char-y-string)
 3. [Expresiones](#expresiones)
 4. [Tipos de Datos Decimales](#tipos-de-datos-decimales)
@@ -22,7 +22,7 @@
 19. [Serialización y Deserialización con Serde](#serialización-y-deserialización-con-serde)
 20. [Iteradores](#iteradores)
 
-## Tipos de Datos Básicos
+## Tipos de Datos Escalares
 
 Rust tiene varios tipos de datos primitivos:
 

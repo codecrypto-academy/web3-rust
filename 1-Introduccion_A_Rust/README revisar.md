@@ -23,9 +23,9 @@ Las personas que hagan este modulo tiene conocimientos de
 - sql
 - html / css / bootstrap
 
-# Contenido BORRADOR
-
-## Proyecto Rust
+# Contenido
+## Parte 1
+### Inicio
 - Empezando
 - Instalar Rust
 - Instalar Visual Studio Code
@@ -33,7 +33,7 @@ Las personas que hagan este modulo tiene conocimientos de
 - Proyecto con cargo
 - Proyectos
 - EJERCICIOS: CREACION DE PROYECTOS EN RUST.
-## Basico
+
 ### Tipos y Operaciones
 - Data Types
 - Operaciones
