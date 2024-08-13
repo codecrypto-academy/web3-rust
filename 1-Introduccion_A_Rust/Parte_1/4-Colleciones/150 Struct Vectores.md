@@ -1,5 +1,19 @@
 # Ejemplos de Struct y Vectores de Struct
 
+
+Este ejemplo muestra:
+
+1. Definición de estructuras simples y compuestas.
+2. Creación de instancias de estructuras.
+3. Acceso y modificación de campos de estructuras.
+4. Creación y manipulación de vectores de estructuras.
+5. Iteración sobre vectores de estructuras.
+6. Filtrado de vectores basado en propiedades de las estructuras.
+7. Uso de estructuras en cálculos.
+8. Estructuras anidadas (una estructura como campo de otra).
+9. Uso de enums para crear colecciones de diferentes tipos de estructuras.
+
+
 ```rust
 // Definición de una estructura simple
 struct Persona {
@@ -120,17 +134,3 @@ fn main() {
     }
 }
 ```
-
-Este ejemplo muestra:
-
-1. Definición de estructuras simples y compuestas.
-2. Creación de instancias de estructuras.
-3. Acceso y modificación de campos de estructuras.
-4. Creación y manipulación de vectores de estructuras.
-5. Iteración sobre vectores de estructuras.
-6. Filtrado de vectores basado en propiedades de las estructuras.
-7. Uso de estructuras en cálculos.
-8. Estructuras anidadas (una estructura como campo de otra).
-9. Uso de enums para crear colecciones de diferentes tipos de estructuras.
-
-Estos ejemplos demuestran cómo puedes trabajar con estructuras y vectores de estructuras de manera efectiva en Rust, incluso sin implementar métodos directamente en las estructuras. Las operaciones se realizan utilizando funciones y métodos estándar de Rust, lo que es útil para entender los fundamentos antes de pasar a implementaciones más avanzadas con métodos propios de las estructuras.

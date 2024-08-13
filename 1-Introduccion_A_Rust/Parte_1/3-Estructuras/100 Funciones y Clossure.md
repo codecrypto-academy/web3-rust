@@ -188,4 +188,4 @@ println!("10 + 5 = {}", incrementa_por_5(10));
 
 Las funciones y closures en Rust proporcionan poderosas herramientas para estructurar y abstraer código. Las funciones ofrecen una forma de organizar código en bloques reutilizables, mientras que los closures permiten crear funciones anónimas que pueden capturar su entorno. Juntos, estos conceptos permiten escribir código Rust expresivo, modular y eficiente.
 
-La capacidad de Rust para tratar las funciones como ciudadanos de primera clase, combinada con su sistema de tipos fuerte y sus garantías de seguridad, hace que trabajar con funciones y closures sea seguro y flexible. Esto es particularmente útil en programación funcional y en situaciones donde se necesita pasar comportamiento como argumento.
+La capacidad de Rust para tratar las funciones como ciudadanos de primera clase (high order functions), combinada con su sistema de tipos fuerte y sus garantías de seguridad, hace que trabajar con funciones y closures sea seguro y flexible. Esto es particularmente útil en programación funcional y en situaciones donde se necesita pasar comportamiento como argumento.

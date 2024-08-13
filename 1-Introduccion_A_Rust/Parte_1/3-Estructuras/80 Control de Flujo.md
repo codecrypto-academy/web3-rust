@@ -208,3 +208,76 @@ println!("El resultado es: {}", resultado);
 ```
 
 El control de flujo en Rust es rico y expresivo, permitiendo escribir código claro y conciso. Las características como expresiones `if`, `loop`, y `match` hacen que el código sea más legible y mantenible. Además, la seguridad de Rust se extiende a estas estructuras, ayudando a prevenir errores comunes y garantizando un comportamiento predecible.
+
+### 5. Adicional sobre match y guards
+
+Los guardas en Rust son expresiones condicionales utilizadas en la coincidencia de patrones para añadir especificidad adicional a un brazo de coincidencia. Permiten incluir condiciones booleanas adicionales que deben ser verdaderas para que el patrón coincida. Los guardas se introducen usando la palabra clave `if` después de un patrón en una expresión `match` o en construcciones `if let` y `while let`.
+
+Aquí tienes algunos puntos clave sobre los guardas en Rust:
+
+1. Sintaxis:
+   Los guardas se escriben después del patrón y antes de la flecha `=>` en un brazo de coincidencia:
+   ```rust
+   match valor {
+       patrón if guarda => expresión,
+       // otros brazos...
+   }
+   ```
+
+2. Propósito:
+   - Permiten condiciones más complejas que no pueden expresarse solo a través de patrones.
+   - Los guardas pueden hacer referencia a variables vinculadas en el patrón.
+
+3. Evaluación:
+   - Si un patrón coincide, se evalúa el guarda.
+   - Si el guarda es verdadero, se selecciona el brazo.
+   - Si el guarda es falso, la coincidencia continúa con el siguiente brazo.
+
+4. Ejemplos:
+
+   Uso básico:
+   ```rust
+   let x = 4;
+   match x {
+       n if n > 0 => println!("Número positivo"),
+       n if n < 0 => println!("Número negativo"),
+       _ => println!("Cero"),
+   }
+   ```
+
+   Con vinculación de patrón:
+   ```rust
+   let par = (2, -2);
+   match par {
+       (x, y) if x == y => println!("Son gemelos"),
+       (x, y) if x + y == 0 => println!("Antimateria, ¡boom!"),
+       (x, _) if x % 2 == 1 => println!("El primero es impar"),
+       _ => println!("Sin correlación..."),
+   }
+   ```
+
+5. Uso con `if let` y `while let`:
+   ```rust
+   let numero = Some(4);
+   if let Some(x) = numero if x > 2 {
+       println!("El número es mayor que 2");
+   }
+   ```
+
+6. Múltiples condiciones:
+   Puedes usar `&&` para combinar múltiples condiciones en un guarda:
+   ```rust
+   match (x, y) {
+       (a, b) if a > 0 && b > 0 => println!("Ambos positivos"),
+       // ...
+   }
+   ```
+
+7. Limitaciones:
+   - Los guardas solo pueden usar variables que estén en ámbito, incluyendo las vinculadas por el patrón.
+   - No pueden vincular nuevas variables.
+
+8. Consideración de rendimiento:
+   Usar guardas a veces puede ser menos eficiente que usar coincidencia de patrones pura, ya que el compilador puede no ser capaz de optimizarlos tan efectivamente.
+
+Los guardas son una característica poderosa en Rust que permite una coincidencia de patrones más expresiva y precisa, permitiéndote escribir código más conciso y legible en escenarios de coincidencia complejos.
