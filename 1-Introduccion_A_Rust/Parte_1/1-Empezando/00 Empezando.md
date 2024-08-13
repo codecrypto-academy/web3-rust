@@ -123,4 +123,3 @@ docker build -t myapp .
 docker run myapp
 ```
 
-Este documento proporciona una guía completa para configurar un entorno de desarrollo Rust, incluyendo la instalación de Rust y VS Code en diferentes sistemas operativos, la configuración de extensiones útiles, la creación de varios tipos de proyectos Rust, y el uso de Docker para desarrollo y despliegue. Asegúrate de adaptar los comandos y configuraciones según las necesidades específicas de tu proyecto.

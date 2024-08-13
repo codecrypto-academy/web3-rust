@@ -62,11 +62,6 @@ Para instalar extensiones, abre VS Code, ve a la barra lateral izquierda y haz c
 6. **Rust Syntax**
    - Mejora el resaltado de sintaxis para código Rust.
 
-7. **Error Lens**
-   - Muestra errores y advertencias inline en el código.
-
-8. **GitLens**
-   - Mejora la integración de Git, útil para cualquier proyecto.
 
 ## Configuración Adicional
 
@@ -78,14 +73,5 @@ Para instalar extensiones, abre VS Code, ve a la barra lateral izquierda y haz c
    - En la configuración, busca "Rust format".
    - Activa "Format On Save" para formatear automáticamente tu código Rust.
 
-3. **Configurar Atajos de Teclado**
-   - Personaliza los atajos de teclado para comandos frecuentes de Rust.
 
-## Uso Básico
 
-1. Abre una carpeta de proyecto Rust con File > Open Folder.
-2. Crea o edita archivos `.rs`.
-3. Usa el terminal integrado para ejecutar comandos de Cargo.
-4. Aprovecha las funciones de autocompletado y análisis de código.
-
-Con estas extensiones y configuraciones, Visual Studio Code se convierte en un potente IDE para desarrollo en Rust. Experimenta con las diferentes extensiones y ajusta la configuración según tus necesidades específicas.

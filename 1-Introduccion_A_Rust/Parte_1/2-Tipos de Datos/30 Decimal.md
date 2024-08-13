@@ -83,17 +83,45 @@ fn main() {
 ## Calculo del importe de una factura:
 
 ```rust
+Aquí tienes el código con comentarios explicativos:
+
+```rust
+// Cálculo usando tipos primitivos (i32 y f32)
+
+// Calcula el bruto multiplicando 453 por 2350
 let bruto = 453 * 2350;
+
+// Calcula el IVA (21% del bruto)
+// Convierte el bruto a f32, multiplica por 21, divide por 100, redondea y convierte de vuelta a i32
 let iva: i32 = (bruto as f32 * 21_f32 / 100_f32).round() as i32; 
+
+// Calcula el importe total sumando el bruto y el IVA
 let importe = bruto + iva as i32;
+
+// Imprime los resultados
 println!("El bruto es: {}", bruto);
 println!("El iva es: {}",iva);
 println!("El importe es: {}", importe);
-use rust_decimal::prelude::*;
+
+// Cálculo usando la biblioteca rust_decimal para mayor precisión
+
+// Importa las funcionalidades necesarias de rust_decimal
+use rust_decimal::prelude::*;
+
+// Calcula el bruto usando Decimal para mayor precisión
 let bruto = Decimal::new(453, 0) * Decimal::new(2350, 0);
+
+// Calcula el IVA (21% del bruto) usando Decimal
 let iva = (bruto * Decimal::new(21, 0) / Decimal::new(100,0)).round();
+
+// Calcula el importe total sumando el bruto y el IVA
 let importe = bruto + iva;
+
+// Imprime los resultados usando Decimal
 println!("El bruto es: {}", bruto);
 println!("El iva es: {} ",iva);
 println!("El total es: {}", importe.round());
+```
+
+Estos comentarios explican cada paso del proceso, tanto para el cálculo usando tipos primitivos como para el cálculo usando la biblioteca `rust_decimal`. La versión con `rust_decimal` proporciona una mayor precisión en los cálculos, especialmente importante cuando se trabaja con valores monetarios.
 ```
