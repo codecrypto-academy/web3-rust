@@ -15,6 +15,7 @@ Ejemplo del algoritmo RSA
 !
 ![Tipos de datos](images/rsa.png)
 ```rust
+fn main() {
     use num_bigint::BigInt;
     // This section performs RSA encryption and decryption using BigInt for large integers.
     let p = BigInt::from(1489); // First prime number
@@ -32,5 +33,6 @@ Ejemplo del algoritmo RSA
     println!("c {}", c); // Output the ciphertext
 
     let m2 = c.modpow(&d, &n); // Decrypt the ciphertext using m2 = c^d mod n
-    println!("original {} m2 {}", m, m2); // Output the original message and decrypted message
+    println!("original {} m2 {}", m, m2); // Output the original message and }
+}
     ```
