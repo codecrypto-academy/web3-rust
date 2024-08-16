@@ -14,6 +14,8 @@ Características
 Ejemplo del algoritmo RSA
 !
 ![Tipos de datos](images/rsa.png)
+   
+1. [Codigo in playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021&gist=e0e49d3db2194bf296fa7e74bb2980eb)
 ```rust
 fn main() {
     use num_bigint::BigInt;
@@ -36,3 +38,7 @@ fn main() {
     println!("original {} m2 {}", m, m2); // Output the original message and }
 }
     ```
+   
+   
+
+    
