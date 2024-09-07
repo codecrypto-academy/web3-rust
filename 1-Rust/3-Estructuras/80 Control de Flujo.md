@@ -3,6 +3,7 @@
 ## 1. if y Expresión if
 
 ### if Básico
+
 ```rust
 let numero = 6;
 
@@ -16,6 +17,7 @@ if numero % 2 == 0 {
 ```
 
 ### Expresión if
+
 ```rust
 let condicion = true;
 let numero = if condicion { 5 } else { 6 };
@@ -26,6 +28,7 @@ println!("El valor de número es: {}", numero);
 ## 2. loop y Expresión loop
 
 ### loop Básico
+
 ```rust
 loop {
     println!("Esto se imprimirá indefinidamente");
@@ -34,6 +37,7 @@ loop {
 ```
 
 ### Expresión loop
+
 ```rust
 let mut contador = 0;
 let resultado = loop {
@@ -59,6 +63,7 @@ println!("¡DESPEGUE!");
 ## 4. for y Expresión for
 
 ### for Básico
+
 ```rust
 for numero in 1..4 {
     println!("{}!", numero);
@@ -66,6 +71,7 @@ for numero in 1..4 {
 ```
 
 ### Iterando sobre una Colección
+
 ```rust
 let a = [10, 20, 30, 40, 50];
 for elemento in a.iter() {
@@ -74,12 +80,12 @@ for elemento in a.iter() {
 ```
 
 ### Expresión for (usando collect)
+
 ```rust
-let numeros = vec![1, 2, 3, 4, 5];
-let cuadrados: Vec<i32> = (for num in numeros {
-    num * num
-}).collect();
-println!("Cuadrados: {:?}", cuadrados);
+ let numeros = vec![1, 2, 3, 4, 5];
+    let cuadrados: Vec<i32> = 
+        numeros.iter().map(|&num| num * num).collect();
+    println!("Cuadrados: {:?}", cuadrados);
 ```
 
 ## 5. match
@@ -97,6 +103,7 @@ match numero {
 ## 6. continue y break
 
 ### continue
+
 ```rust
 for numero in 0..5 {
     if numero % 2 == 0 {
@@ -107,6 +114,7 @@ for numero in 0..5 {
 ```
 
 ### break
+
 ```rust
 let mut contador = 0;
 loop {
@@ -168,6 +176,7 @@ fn buscar(objetivo: i32, nums: &[i32]) -> bool {
 ## Características Avanzadas
 
 ### 1. match con Guardas
+
 ```rust
 let numero = 4;
 match numero {
@@ -178,6 +187,7 @@ match numero {
 ```
 
 ### 2. for con Patrones
+
 ```rust
 let v = vec![(1, 'a'), (2, 'b'), (3, 'c')];
 for (numero, letra) in v {
@@ -186,6 +196,7 @@ for (numero, letra) in v {
 ```
 
 ### 3. break con Valor en for
+
 ```rust
 let resultado = for i in 0..100 {
     if i * i > 400 {
@@ -196,6 +207,7 @@ println!("El primer número cuyo cuadrado es mayor que 400 es: {}", resultado);
 ```
 
 ### 4. loop con Condición de Salida
+
 ```rust
 let mut contador = 0;
 let resultado = loop {
@@ -217,6 +229,7 @@ Aquí tienes algunos puntos clave sobre los guardas en Rust:
 
 1. Sintaxis:
    Los guardas se escriben después del patrón y antes de la flecha `=>` en un brazo de coincidencia:
+
    ```rust
    match valor {
        patrón if guarda => expresión,
@@ -225,10 +238,12 @@ Aquí tienes algunos puntos clave sobre los guardas en Rust:
    ```
 
 2. Propósito:
+
    - Permiten condiciones más complejas que no pueden expresarse solo a través de patrones.
    - Los guardas pueden hacer referencia a variables vinculadas en el patrón.
 
 3. Evaluación:
+
    - Si un patrón coincide, se evalúa el guarda.
    - Si el guarda es verdadero, se selecciona el brazo.
    - Si el guarda es falso, la coincidencia continúa con el siguiente brazo.
@@ -236,6 +251,7 @@ Aquí tienes algunos puntos clave sobre los guardas en Rust:
 4. Ejemplos:
 
    Uso básico:
+
    ```rust
    let x = 4;
    match x {
@@ -246,6 +262,7 @@ Aquí tienes algunos puntos clave sobre los guardas en Rust:
    ```
 
    Con vinculación de patrón:
+
    ```rust
    let par = (2, -2);
    match par {
@@ -257,6 +274,7 @@ Aquí tienes algunos puntos clave sobre los guardas en Rust:
    ```
 
 5. Uso con `if let` y `while let`:
+
    ```rust
    let numero = Some(4);
    if let Some(x) = numero if x > 2 {
@@ -266,6 +284,7 @@ Aquí tienes algunos puntos clave sobre los guardas en Rust:
 
 6. Múltiples condiciones:
    Puedes usar `&&` para combinar múltiples condiciones en un guarda:
+
    ```rust
    match (x, y) {
        (a, b) if a > 0 && b > 0 => println!("Ambos positivos"),
@@ -274,6 +293,7 @@ Aquí tienes algunos puntos clave sobre los guardas en Rust:
    ```
 
 7. Limitaciones:
+
    - Los guardas solo pueden usar variables que estén en ámbito, incluyendo las vinculadas por el patrón.
    - No pueden vincular nuevas variables.
 

@@ -58,7 +58,7 @@ Los closures son funciones anónimas que pueden capturar su entorno.
 
 ### Sintaxis Básica
 ```rust
-let suma = |a, b| a + b;
+let suma: fn(i32, i32) -> i32 = |a, b| a + b
 println!("3 + 4 = {}", suma(3, 4));
 ```
 
@@ -70,9 +70,10 @@ println!("{}", igual_a_x(4));
 ```
 
 ### Tipos de Captura
-- `Fn`: Captura por referencia
-- `FnMut`: Captura por referencia mutable
-- `FnOnce`: Captura por valor
+ En Rust, los closures pueden capturar su entorno de diferentes maneras, lo que se clasifica en tres tipos:
+ - `Fn`: Este tipo de closure captura las variables por referencia, lo que significa que puede acceder a ellas sin tomar posesión de ellas.
+ - `FnMut`: Este closure también captura por referencia, pero permite modificar las variables capturadas, lo que significa que puede cambiar su valor.
+ - `FnOnce`: Este closure toma posesión de las variables que captura, lo que significa que solo puede ser llamado una vez, ya que después de su uso, las variables ya no están disponibles.
 
 ```rust
 fn consumir<F: FnOnce()>(f: F) {

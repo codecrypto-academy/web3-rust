@@ -41,6 +41,16 @@ Instala las siguientes extensiones:
 4. crates
 5. Rust Test Explorer
 
+## Para quien es Rust
+Quien deberia de aprender Rust
+
+## Proyectos significativos
+Algunos proyectos con Activx, rocket, clap, etc.
+
+## Ediciones de Rust
+Relacion de la ediciones
+
+
 ## Creación de Proyectos en Rust
 
 ### Crear un Nuevo Proyecto Binario
@@ -85,14 +95,16 @@ cd mi_libreria
 {
     "name": "Rust",
     "image": "rust:latest",
-    "extensions": [
-        "rust-lang.rust-analyzer",
-        "vadimcn.vscode-lldb",
-        "serayuzgur.crates"
-    ],
-    "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rust-lang.rust-analyzer",
+                "vadimcn.vscode-lldb",
+                "serayuzgur.crates"
+            ]
+        }
     }
+    // ... existing code ...
 }
 ```
 

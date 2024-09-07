@@ -79,7 +79,6 @@
 - ink! (smart contract language for Substrate-based blockchains)
 - ethers-rs (Ethereum library and wallet implementation)
 
-Certainly! Let's discuss Rust with WebAssembly (Wasm), its use in Docker, and its applications on the web.
 
 # Rust, WebAssembly, Docker
 
@@ -170,9 +169,6 @@ While Docker itself is not written in Rust, Rust applications are often deployed
 3. **Reusability**: Code can often be shared between server-side Rust and browser-side Wasm implementations.
 
 4. **Ecosystem**: Access to Rust's growing ecosystem of libraries and tools.
-
-
-ICertainly! Tauri is an exciting framework for building cross-platform desktop applications using web technologies, with Rust as its backend. Here's an overview of Tauri and its use of Rust:
 
 # Tauri in Rust
 

@@ -21,6 +21,15 @@ cargo new --lib my-lib
 cargo init my-app
 cargo init --lib my-lib
 ```
+Diferencias entre cargo new y cargo init
+| Feature                | cargo new       | cargo init      |
+|------------------------|-----------------|-----------------|
+| Creates new directory  | Yes             | No              |
+| Works in existing dir  | No              | Yes             |
+| Creates Git repo       | Yes (by default)| No (by default) |
+| Creates Cargo.toml     | Yes             | Yes             |
+| Creates src/main.rs    | Yes             | Yes             |
+| Can create lib project | Yes             | Yes             |
 
 ### Construcción y Ejecución
 
@@ -88,9 +97,13 @@ mod tests {
 use lib;
 
 fn main() {
-    println!("Hello, world! {}", lib::add(1, 2));
+    println!("Hello, world! {}", lib◊::add(1, 2));
 }
 ```
+Explicación de los cambios:
+- Se añadió **use lib;** al principio del archivo para importar la librería.
+- Se modificó la función **main()** para usar **lib::add(1, 2)** dentro del println!.
+- Este código importará la librería lib, llamará a la función add con los argumentos 1 y 2, y luego imprimirá el resultado junto con el mensaje "Hello, world!".
 
 ### Uso de Librería desde GitHub
 En `Cargo.toml`:
@@ -143,49 +156,70 @@ Luego, adjuntar el contenedor a VSCode (Ctrl+Shift+P, "Attach to Running Contain
 
 ## 5. Creación de Imagen Docker para un Proyecto Rust
 
-### Dockerfile
+### Proyecto simple en rust
+Metemos un Dockerfile en el directorio del proyecto
+
+```Dockerfile
+FROM rust:1.58 as builder
+WORKDIR /usr/src/myapp
+COPY . .
+RUN cargo build --release
+
+FROM debian:buster-slim
+COPY --from=builder /usr/src/myapp/target/release/myapp /usr/local/bin/myapp
+CMD ["myapp"]
+```
+
+Construye la imagen y la ejecuta:
+```bash
+docker build -t myapp .
+docker run myapp
+```
+
+### Creacion de un servidor web
+
 ```dockerfile
+# Etapa de construcción
 FROM docker.io/rust:1-slim-bookworm AS build
-ARG pkg=web01
+
 WORKDIR /build
 COPY . .
-RUN --mount=type=cache,target=/build/target \
-    --mount=type=cache,target=/usr/local/cargo/registry \
-    --mount=type=cache,target=/usr/local/cargo/git \
-    set -eux; \
-    cargo build --release; \
-    objcopy --compress-debug-sections target/release/$pkg ./main
+# Montamos cachés para optimizar la construcción
+RUN cargo build --release; 
+   
 
+# Etapa de ejecución
 FROM docker.io/debian:bookworm-slim
 WORKDIR /app
-COPY --from=build /build/main ./
-COPY --from=build /build/Rocket.tom[l] ./static
-COPY --from=build /build/stati[c] ./static
-COPY --from=build /build/template[s] ./templates
+COPY --from=build /build/target/release/container ./
 ENV ROCKET_ADDRESS=0.0.0.0
 ENV ROCKET_PORT=8080
-CMD ./main
+CMD ./container
 ```
 
 ### Ejemplo de Servidor Web (`main.rs`)
 ```rust
+// Importamos los módulos necesarios de Rocket
 use rocket::{get, routes, launch};
 
+// Definimos una ruta para la página de inicio
 #[get("/")]
 fn index() -> &'static str {
   "Hello, world!"
 }
 
+// Definimos una ruta que acepta un parámetro en la URL
 #[get("/hello/<name>")]
 fn hello(name: &str) -> String {
    format!("Hello, {}!", name)
 }
 
+// Función principal que configura y lanza el servidor Rocket
 #[launch]
 fn rocket() -> _ {
     rocket::build()
-    .mount("/", routes![index])
-    .mount("/", routes![hello])
+    .mount("/", routes![index])  // Montamos la ruta de inicio
+    .mount("/", routes![hello])  // Montamos la ruta de saludo
 }
 ```
 
@@ -201,8 +235,15 @@ rocket = "0.5.1"
 ```
 
 ### .dockerignore
+El archivo .dockerignore sirve para especificar qué archivos y directorios deben ser ignorados por Docker durante el proceso de construcción de una imagen.
+
+Este archivo funciona de manera similar a .gitignore, pero específicamente para el contexto de Docker
+
 ```
 target
+.dockerignore
+.gitignore
+Dockerfile
 ```
 
 ### Construcción y Ejecución de la Imagen Docker
