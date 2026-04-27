@@ -60,13 +60,12 @@ fn main() {
 
 ```rust
 // Una función que suma todos los elementos de un vector
-fn suma_vector<T: std::ops::Add<Output = T> + Copy>(v: &Vec<T>) -> T {
-    v.iter().fold(std::mem::zeroed(), |acc, &x| acc + x)
-}
-
 fn main() {
-    let numeros = vec![1, 2, 3, 4, 5];
-    println!("Suma: {}", suma_vector(&numeros));
+    fn suma<T: std::ops::Add<Output = T> + Copy + Default>(v: &Vec<T>) -> T {
+        v.iter().fold(T::default(), |acc, x| acc + *x)
+    }
+    let numbers = vec![1.1, 2.2, 3.3, 4.4, 5.5];
+    println!("La suma de los números es: {}", suma(&numbers));
 }
 ```
 
